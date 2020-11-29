@@ -1,0 +1,17 @@
+.header {
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+
+  .btn-primary {
+    @include btn(
+      $primary-color,
+      transparent,
+      $border-radius-big,
+      $white,
+      $primary-color
+    );
+  }
+}

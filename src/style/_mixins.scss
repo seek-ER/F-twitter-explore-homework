@@ -2,3 +2,31 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin btn($color, $bg-color, $border-radius, $hover-color, $bg-hover-color) {
+  color: $color;
+  background-color: $bg-color;
+  text-align: center;
+  border-radius: $border-radius;
+  padding: 1px 25px;
+  border: 1px solid $primary-color;
+  &:hover {
+    background-color: $bg-hover-color;
+    color: $hover-color;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+@mixin input() {
+  padding: 5px;
+  height: 35px;
+  border: none;
+  color: white;
+  border-bottom: 1px solid grey;
+  background-color: transparent;
+  &:focus {
+    outline: none;
+  }
+}
